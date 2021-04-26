@@ -3,12 +3,12 @@
 $estagios =  [
     [
         'text' => 'Listar',
-        'url'  => '/estagios',
+        'url' => 'estagios',
         'can'  => 'admin_ou_empresa'
     ],
     [
         'text' => 'Cadastrar',
-        'url'  => '/estagios/create',
+        'url' => 'estagios/create',
         'can'  => 'empresa'
     ],
 ];
@@ -16,13 +16,13 @@ $estagios =  [
 $vagas =  [
     [
         'text' => 'Listar',
-        'url'  => '/vagas',
+        'url' => 'vagas',
         'can'  => 'logado',
     ],
-    
+
     [
         'text' => 'Cadastrar',
-        'url'  => '/vagas/create',
+        'url' => 'vagas/create',
         'can'  => 'logado',
     ],
 ];
@@ -30,23 +30,23 @@ $vagas =  [
 $empresas =  [
     [
         'text' => 'Listar',
-        'url'  => '/empresas',
+        'url' => 'empresas',
     ],
     [
         'text' => 'Cadastrar',
-        'url'  => '/empresas/create',
+        'url' => 'empresas/create',
     ],
 ];
 
 $convenios =  [
     [
         'text' => 'Listar',
-        'url'  => '/convenios',
-        'can'     => 'admin',
+        'url' => 'convenios',
+        'can'  => 'admin',
     ],
     [
         'text' => 'Cadastrar',
-        'url'  => '/convenios/create',
+        'url' => 'convenios/create',
         'can'     => 'admin',
     ],
 ];
@@ -54,11 +54,11 @@ $convenios =  [
 $avisos =  [
     [
         'text' => 'Listar',
-        'url'  => '/avisos',
+        'url'  => 'avisos',
     ],
     [
         'text' => 'Cadastrar',
-        'url'  => '/avisos/create',
+        'url'  => 'avisos/create',
         'can'     => 'admin',
     ],
 ];
@@ -66,12 +66,12 @@ $avisos =  [
 $pareceristas =  [
     [
         'text' => 'Listar',
-        'url'  => '/pareceristas',
+        'url' => 'pareceristas',
         'can'     => 'admin',
     ],
     [
         'text' => 'Cadastrar',
-        'url'  => '/pareceristas/create',
+        'url' => 'pareceristas/create',
         'can'     => 'admin',
     ],
 ];
@@ -117,31 +117,31 @@ return [
         ],
         [
             'text'    => 'Atualização do Cadastro  da Empresa',
-            'url'     => '/empresa_update',
+            'url' => 'empresa_update',
             'can'     => 'empresa',
         ],
 
         [
             'text'    => 'Acessar outra Empresa',
-            'url'     => '/acessar_outra_empresa',
+            'url' => 'acessar_outra_empresa',
             'can'     => 'empresa',
         ],
 
         [
             'text'    => 'Meus Pareceres',
-            'url'     => '/meus_pareceres',
+            'url' => 'meus_pareceres',
             'can'     => 'parecerista',
         ],
 
         [
             'text'    => 'Estágios para Parecer de Mérito',
-            'url'     => '/parecer_merito',
+            'url' => 'parecer_merito',
             'can'     => 'parecerista',
         ],
 
         [
             'text'    => 'Estágios Rescindidos',
-            'url'     => '/estagios_rescindidos',
+            'url' => 'estagios_rescindidos',
             'can'     => 'parecerista',
         ],
     ]
